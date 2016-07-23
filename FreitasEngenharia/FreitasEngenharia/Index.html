@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Freitas Engenharia</title>
+    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--PONTEIRO MOUSE-->
+    <link href="Content/mouse.css" rel="stylesheet" />
+
+    <!--JQUERY-->
+    <script src="Scripts/jquery-2.2.4.js"></script>
+
+    <!--BOOTSTRAP-->
+    <script src="Scripts/bootstrap.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .borda {
+            border: solid black 1px;
+        }
+
+        .margem {
+            margin: 20px 0 0 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        hr {
+            border: solid black 1px;
+        }
+
+        .Junbo {
+            border-radius: 10px;
+            background-color: silver;
+            width: 388px;
+            margin: 15px 1px 0 0;
+            color: black;
+            height: 250px;
+            padding: 20px;
+        }
+
+        @media (max-width: 990px) {
+            .Junbo {
+                border: dashed red;
+                width: auto;
+            }
+        }
+
+        .Junbo button {
+            position: fixed center;
+        }
+    </style>
+
+
+    <script>
+        function simpsons() {
+            //window.open('Galeria.html')
+            location.href = "Galeria.html";
+        }
+    </script>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <!--Coloca o Menu na Pagina-->
+            <div id="Menu">
+                <script>
+                    $("#Menu").load("Menu.html");
+                </script>
+            </div>
+
+            <!--Carrosel-->
+            <div id="carrosel">
+                <script>
+                    $("#carrosel").load("Carrosel.html");
+                </script>
+            </div>
+
+            <!--CORPO DA PAGINA-->
+            <div>
+                <div class="col-lg-12 col-md-12 col-xs-12 borda margem"><h1>Teste com as Grids</h1></div>
+
+                <!--TEXTO 1-->
+                <div class="Junbo margem col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <h3 align="center">Os Simpsons</h3>
+                    <hr />
+                    <p align="justify">
+                        Os Simpsons é mais que um desenho é a serie que está a mais tempo no ar, trata-se de uma família norte americana que vive sidutações inusitadas...
+                    </p>
+
+                    <div class="col-xs-12">
+                        <center><button type="button" class="btn btn-primary" onclick="simpsons()">Leia mais</button></center>
+                    </div>
+                </div>
+
+                <!--TEXTO 2-->
+                <div class="Junbo margem col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <h3 align="center">Obra Barreiro</h3>
+                    <hr />
+                    <p align="justify">
+                        Esse é um Empreendimento onde irá proporcionar conforto e lazer para seus moradores. Sitiado em uma otima região de Barreiro ...
+                    </p>
+
+                    <div class="col-xs-12">
+                        <center><button type="button" class="btn btn-primary">Leia mais</button></center>
+                    </div>
+                </div>
+
+                <!--TEXTO 3-->
+                <div class="Junbo margem col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <h3 align="center">Obra Sarzedo</h3>
+                    <hr />
+                    <p align="justify">
+                        Esse é um Empreendimento onde irá proporcionar conforto e lazer para seus moradores. Sitiado em uma otima região de Sarzedo ...
+                    </p>
+
+                    <div class="col-xs-12">
+                        <center><button type="button" class="btn btn-primary">Leia mais</button></center>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div> <!--FIM ROW-->
+    </div> <!--FIM CONTAINER-->
+
+</body>
+</html>

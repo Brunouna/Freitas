@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Galeria Modal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+     
+    <!--PONTEIRO MOUSE-->
+    <link href="Content/mouse.css" rel="stylesheet" />
+
+    <!--JQUERY-->
+    <script src="Scripts/jquery-2.2.4.js"></script>
+
+    <!--BOOTSTRAP-->
+    <script src="Scripts/bootstrap.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <!--Coloca o Menu na Pagina-->
+    <div id="Menu">
+        <script>
+            $("#Menu").load("Menu.html");
+        </script>
+    </div>
+
+    <!--FIM MENU-->
+
+    <!--GALERIA-->
+    <div class="container">
+        <h2>Os Simpsons</h2>
+        <!-- Trigger the modal with a button -->
+        <!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>-->
+
+        <div class="col-md-3 col-sm-6"><img src="Img/Bart.png" class="img-responsive ponteiro" data-toggle="modal" data-target="#BartModal" /></div>
+        <div class="col-md-3 col-sm-6"><img src="Img/marge_meg.png" class="img-responsive ponteiro" data-toggle="modal" data-target="#MargeModal" /></div>
+        <div class="col-md-3 col-sm-6"><img src="Img/Lisa_Simpson.png" class="img-responsive ponteiro" data-toggle="modal" data-target="#LisaModal" /></div>
+        <div class="col-md-3 col-sm-6"><img src="Img/Homer.jpg" class="img-responsive ponteiro" data-toggle="modal" data-target="#HomerModal" /></div>
+
+        <!-- Inicio Modal -->
+        <!--HOMER-->
+        <div class="modal fade" id="HomerModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Homer</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="Img/Homer.jpg" class="img-responsive" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Bart-->
+        <div class="modal fade" id="BartModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Bart</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="Img/Bart.png" class="img-responsive" width="500" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Marge-->
+        <div class="modal fade" id="MargeModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Marge</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="Img/marge_meg.png" class="img-responsive" width="250" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Lisa-->
+        <div class="modal fade" id="LisaModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Lisa</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="Img/Lisa_Simpson.png" class="img-responsive" width="350" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Fim Modal-->
+    </div>
+
+</body>
+</html>
